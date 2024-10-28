@@ -10,22 +10,22 @@ import CommonButton from "../common/Button";
 function Companies() {
   return (
     <React.Fragment>
-      <div className="bg-[#FFFFFF]  h-[93px] py-5 px-10">
-        <div className="flex justify-between items-center mx-auto">
-          <div>
-            <img src={company1} alt="" className="w-[140px] h-[45px]" />
+      <div className="bg-[#FFFFFF] h-[93px] py-5 px-4 md:px-10">
+        <div className="flex flex-wrap justify-between items-center mx-auto">
+          <div className="flex justify-center items-center mb-2">
+            <img src={company1} alt="" className="w-[120px] h-auto md:w-[140px] md:h-[45px]" />
           </div>
-          <div>
-            <img src={company2} alt="" className="w-[140px] h-[45px]" />
+          <div className="flex justify-center items-center mb-2">
+            <img src={company2} alt="" className="w-[120px] h-auto md:w-[140px] md:h-[45px]" />
           </div>
-          <div>
-            <img src={company3} alt="" className="w-[140px] h-[45px]" />
+          <div className="flex justify-center items-center mb-2">
+            <img src={company3} alt="" className="w-[120px] h-auto md:w-[140px] md:h-[45px]" />
           </div>
-          <div>
-            <img src={company4} alt="" className="w-[140px] h-[45px]" />
+          <div className="flex justify-center items-center mb-2">
+            <img src={company4} alt="" className="w-[120px] h-auto md:w-[140px] md:h-[45px]" />
           </div>
-          <div>
-            <img src={company5} alt="" className="w-[140px] h-[45px]" />
+          <div className="flex justify-center items-center mb-2">
+            <img src={company5} alt="" className="w-[120px] h-auto md:w-[140px] md:h-[45px]" />
           </div>
         </div>
       </div>
@@ -45,11 +45,11 @@ export const CTASection = () => {
               "Looking for top developers and designers? Let's build something great together. Get in touch today!"
             </h2>
             <div className="flex justify-center md:justify-start">
-              <div className="relative left-8">
+              <div className="relative md:left-8">
                 <div>
                   <img src={company6} alt="button_image" className="w-[123.83px] h-[191px]" />
                 </div>
-                <div className="absolute top-16 -right-[55px] ">
+                <div className="absolute top-16 -right-[52px] ">
                   <CommonButton title="Hire Top Developers" className="bg-[#9A00FF] text-white font-semibold py-3 px-6 rounded-[5px] w-[220px]" handleClick={() => console.log("")} />
                 </div>
               </div>

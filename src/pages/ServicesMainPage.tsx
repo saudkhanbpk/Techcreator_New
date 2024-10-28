@@ -6,11 +6,11 @@ import RecentWorks from '../components/common/RecentWorks'
 import RelatedServices from '../components/common/RelatedServices'
 import ServicesHeroSection from '../components/common/ServicesHeroSection'
 import ServicesMainLayout from '../components/layout/ServicesMainLayout'
-
+import webImage from '../assets/webImages/fullStack_web_image.svg'
 function ServicesMainPage() {
   return (
     <ServicesMainLayout>
-      <ServicesHeroSection title='Full stack web development services' description='At TechCreator Software Company, we specialize in crafting bespoke software solutions that cater to your unique business needs. Our portfolio showcases a range of successful proul realities. Join us in the journey of transforming your vision into cutting-edge technology.' image='' />
+      <ServicesHeroSection title='Full stack web development services' description='At TechCreator Software Company, we specialize in crafting bespoke software solutions that cater to your unique business needs. Our portfolio showcases a range of successful proul realities. Join us in the journey of transforming your vision into cutting-edge technology.' image={webImage} image2={webImage} />
       <FeatureSection />
       <FeaturesList />
       <DiagonalFeatureSection />

@@ -10,16 +10,16 @@ function Pricing() {
         <div className="min-h-screen bg-gray-900 text-white p-4 md:p-8">
           <div className="max-w-6xl mx-auto"></div>
         </div>
-        <div className="flex justify-between gap-10  py-20 px-20">
-          <div className="mt-10">
-            <h1 className="text-[#004540] font-inter font-medium text-[45.25px]">Innovation Unleashed</h1>
-            <p className="text-[#004540] font-inter font-normal text-[20px]">
+        <div className="flex flex-col md:flex-row justify-between gap-6 py-10 md:py-20 px-6 md:px-20">
+          <div className="mt-6 md:mt-10 space-y-5">
+            <h1 className="text-[#004540] font-inter font-medium text-3xl md:text-[45.25px]">Innovation Unleashed</h1>
+            <p className="text-[#004540] font-inter font-normal text-lg md:text-[20px] mt-4 md:mt-0">
               Dive into the future with our state-of-the-art products and services. From software development to hardware solutions, we are the architects of your digital dreams.
             </p>
           </div>
-          <div className="relative w-[480px] h-[549.42px]">
+          <div className="relative w-full md:w-[480px] h-[400px] md:h-[549.42px] mx-auto md:mx-0">
 
-            <div className="relative z-10">
+            <div className="relative z-10 w-full h-full">
               <div className="w-[600px]">
                 <img
                   src={backImage}
@@ -77,19 +77,19 @@ function PricingHeroSection() {
     },
   ];
   return (
-    <div className="relative bg-gray-900 text-white h-[420px]">
+    <div className="relative bg-gray-900 text-white h-auto md:h-[420px] px-4">
       <div className="absolute inset-0 overflow-hidden">
         <img
           src="https://s3-alpha-sig.figma.com/img/a9cc/6929/3db1f6cddf03872eab454aad5671343e?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V1-Qh-2cTi2DVPnP699M0Fo~0h2a4NoLTQ~ehngrhalUMU5VZx0qPThfFHzL1jAEBVYi9ypCydZt--uF7CXm-IkIEg5Q3oKNI1jGXolQFWPLOyVrckswWw8RMkEGGvhJagpJ-cJ934cTv2S9w~6GletQ~fN6YczEmJb3RWs~fq2QJvVir4QHIDRmRHaPR-pSfxQiTOTMkHbjeJBt2b-hRkAxahuAq5hTDTT3Y1X5E6uZI8HZutUyzZLQcKifVSqQ4nQPDnf9OvO0wNU-Es8gqKr3mkWNhyMxm18Chmt8bObkPdOKjMrZDmJDr48Fd1kA7ZYC823vS1h-ukBGy6X~WQ__"
           alt="Background"
-          className="w-full opacity-25"
+          className="w-full h-full object-cover opacity-25"
         />
       </div>
-      <div className="relative max-w-[1440px]  mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-        <h1 className="text-3xl md:text-3xl font-semibold text-center leading-[79.23px] mb-4">
+      <div className=" sm:px-6 py-24 md:py-32 relative max-w-[1440px] mx-auto container">
+        <h1 className="text-2xl md:text-3xl font-semibold leading-tight mb-4 text-center">
           PRICING
         </h1>
-        <p className="text-center font-inter  text-xl font-normal mb-12 text-[#FFFFFF]">
+        <p className="text-lg md:text-xl font-normal mb-8 text-white text-center">
           TechCreator easy to use. Whether you need a simple mobile app or a
           complex web application, TechCreator has the expertise to deliver
           high-quality solutions that excel about our web and mobile app
@@ -114,15 +114,15 @@ function PricingHeroSection() {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0">
           {plans.map((plan, index) => (
             <div
               key={index}
-              className="bg-[#4848485C] w-[359px] h-[604.11px]  rounded-lg p-6 flex flex-col"
+              className="bg-[#4848485C]  bg-gray-800 w-full md:w-[359px] h-auto md:h-[604.11px] rounded-lg p-6 flex flex-col"
             >
-              <h2 className="text-xl font-inter text-[#FFFFFF] font-semibold mb-2">{plan.name}</h2>
+              <h2 className="text-xl font-semibold mb-2">{plan.name}</h2>
               <p className="mb-6 text-[14.86px] font-normal font-inter">Membership</p>
-              <div className="text-[49.52px] font-inter font-medium ">
+              <div className="text-[49.52px] font-inter font-medium  items-center">
                 ${plan.price}
                 <span className="text-[14.86px] font-semibold">/package</span>
               </div>

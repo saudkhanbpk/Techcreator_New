@@ -61,7 +61,7 @@ const ClientTestimonialsSection = () => {
 
   return (
     <section className="py-16">
-      <div className="container mx-auto px-4">
+      <div className="mx-auto px-4">
         <h2 className="text-[35px] font-bold text-center text-purple-600 mb-2">
           CLIENT TESTIMONIALS
         </h2>

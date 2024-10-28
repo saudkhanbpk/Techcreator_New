@@ -5,17 +5,17 @@ import ServiceCard from "./ServiceCard";
 function ServicesSection() {
   const responsive = {
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 2,
+      breakpoint: {  max: 3000, min: 1440  },
+      items: 3,
       slidesToSlide: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1440, min: 1024 },
       items: 2,
       slidesToSlide: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 1024, min: 640},
       items: 1,
       slidesToSlide: 1,
     },
@@ -75,7 +75,7 @@ function ServicesSection() {
         >
           {servicesArr.map((item, index) => {
             return (
-              <div className="h-auto w-[333px]  mb-14">
+              <div className="h-auto w-[333px] mb-14">
                 <ServiceCard
                   key={index}
                   currentIndex={index}
@@ -88,7 +88,6 @@ function ServicesSection() {
             );
           })}
         </Carousel>
-        ;
       </div>
     </React.Fragment>
   );

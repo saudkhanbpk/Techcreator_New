@@ -33,7 +33,7 @@ function Teams() {
       <div className="py-20 text-center">
         <p className="font-inter font-bold text-[35px] text-[#9A00FF]">Expert Team</p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 md:gap-20">
         {profiles.map((profile, index) => (
           <ProfileCard
             key={index}
